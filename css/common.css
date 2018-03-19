@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "SimSum";
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.submit_buttom{
+    cursor:pointer;
+
+}
+
+// .submit_buttom:hover{
+// 	background-color: rgb(201,70,70);
+// }
+
+/*登录框CSS*/
+
+#login_box,#reg_box{
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    z-index: 1002;
+    display: none;
+}
+
+#login_box > span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#login_box > .img{
+    width: 200px;
+    height: 60px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#login_box > .yours{
+    width: 500px;
+    height: 95px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#login_box > .yours > .login_icons{
+    margin: 10px auto;
+    width: 384px;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login_box > .yours > .login_icons > a{
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background-image: url("../images/login_icons_small.svg");
+    background-repeat: no-repeat;
+    clip: rect(0px,64px,64px,0px);
+}
+
+#login_box > .yours > .login_icons > .weibo{
+    background-position: 0 0;
+}
+
+#login_box > .yours > .login_icons > .weibo:hover{
+    background-position: 0 -80px;
+}
+
+#login_box > .yours > .login_icons > .QQ{
+    background-position: -80px 0;
+}
+
+#login_box > .yours > .login_icons > .QQ:hover{
+    background-position: -80px -80px;
+}
+
+#login_box > .yours > .login_icons > .douban{
+    background-position: -160px 0;
+}
+
+#login_box > .yours > .login_icons > .douban:hover{
+    background-position: -160px -80px;
+}
+
+#login_box > .yours > .login_icons > .renren{
+    background-position: -240px 0;
+}
+
+#login_box > .yours > .login_icons > .renren:hover{
+    background-position: -240px -80px;
+}
+
+#login_box > .yours > .login_icons > .weixin{
+    background-position: -320px 0;
+}
+
+#login_box > .yours > .login_icons > .weixin:hover{
+    background-position: -320px -80px;
+}
+
+#login_box > .user_input{
+    width: 500px;
+    height: 160px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#login_input{
+    position: relative; 
+    width: 308px; 
+    height: 95%; 
+    margin: 0 auto;
+}
+
+#login_input > .login_inputs{
+    width: 286px;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+}
+
+#login_input > .code{
+    width: 150px;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+}
+
+#login_box > .login_turnto{
+    text-align: center;
+}
+
+/*注册CSS*/
+
+#reg_box > .reg_top{
+    height: 60px;
+    width: 400px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+#reg_box > span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#reg_box > .reg_main{
+    height: 260px;
+    width: 400px;
+    margin: 20px auto 0;
+}
+
+#reg_box > .reg_main > p{
+    text-align: center;
+}
+
+#reg_box > .reg_turnto{
+    text-align: center;
+    margin-top: -30px;
+}
+
+/*导航栏CSS*/
+
+#nav_mark{
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) , transparent);
+    min-width: 1300px;
+    z-index: 998;
+}
+
+#nav{
+    width: 94%;
+    height: 48px;
+    /*background-color: red;*/
+    position: absolute;
+    /*position: fixed;//固定定位*/
+    left: 3%;
+    top: 0;
+    min-width: 1170px;
+    z-index: 999;
+}
+
+#nav .logo > img{
+    margin-top: 12px;
+}
+
+.link ul{
+    width: 600px;
+    // background-color: green;
+    position: absolute;
+    left: 95px;
+    top: 16px;
+    font-size: 15px;
+    list-style: none;
+}
+
+.link ul>li{
+    display: inline-block;
+    width: 45px;
+}
+
+
+#longa{
+    width: 70px;
+}
+
+.link ul>li>a:hover{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+}
+
+.login_div{
+    width: 128px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: -128px;
+    border: none;
+}
+
+.login_div > a{
+    color: white;
+    width: 54px;
+    height: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.login_div>a.SingIn{
+    background-color: rgba(220,30,30,.7);
+    padding: 8px 10px;
+    border-radius: 2px;
+}
+
+.login_div>a.SingIn:hover{
+    background-color: rgba(230,15,15,.9);
+    color: #333;
+}
+
+
+
+.login_div>a.LogIn{
+    border: 1px solid #fff;
+    padding: 8px 10px;
+    border-radius: 2px;
+}
+
+.login_div>a.LogIn:hover{
+    background-color: rgba(255,255,255,.9);
+    color: #000;
+}
+
+
+/*用户登录头像*/
+.login_div > .user_info{
+    height: 48px;
+    width: 48px;
+    padding-left: 40px;
+    display: none;
+}
+
+.login_div > .user_info > img{
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 2px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+}
+
+/*用户头像下拉框*/
+.login_div > .user_detail{
+    width: 128px;
+    height: 130px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .4);
+    display: none;
+    z-index: 10008;
+    margin-top: -2px;
+}
+
+.login_div > .user_detail > ul{
+    list-style: none;
+}
+
+.login_div > .user_detail > ul > li{
+    height: 30px;
+    margin-left: 13px;
+    margin-top: 10px;
+    line-height: 30px;
+    padding-left: 30px;
+    /*border: 1px solid #fff;*/
+}
+
+.login_div > .user_detail > ul > li.user{
+    background: url("../images/persion-icon.png")no-repeat left center;
+    background-size: 20px 20px;
+}
+
+.login_div > .user_detail > ul > li.like{
+    background: url("../images/like-icon.png")no-repeat left center;
+    background-size: 20px 20px;
+}
+
+.login_div > .user_detail > ul > li.logout{
+    background: url("../images/quit-icon.png")no-repeat left center;
+    background-size: 20px 20px;
+}
+
+/*顶部搜索框*/
+
+#top_seach_div{
+    position: absolute;
+    left: 600px;
+    top: 9px;
+    width: 48%;
+    display: none;
+    z-index: 1000;
+    border:1px solid #333;
+    border-radius: 3px;
+}
+
+#top_seach{
+    height: 29px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    border-radius: 3px;
+}
+
+#top_seach_text{
+    width: 480px;
+    height: 16px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline:none;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #666;
+}
+
+#top_seach > a{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/top_search.svg") 8px 4px no-repeat;
+}
+
+
+/*分类栏 大家正在关注*/
+/*
+#main > .all_look {
+ width:90%;
+ height: 30px;
+
+ margin: 30px auto 0px;
+ border-top: 1px solid #ddd;
+}
+#main > .all_look > a{
+    background: #fff;
+    margin: 0 auto;
+    width: 200px;
+    display: block;
+    text-align: center;
+    position: relative;
+    top:-10px;
+    color:#999;
+    font-size:16px;
+}
+*/
+.all_look{
+    color: rgb(153, 153, 153);
+    padding: 0 20px 0;
+    margin: 40px 5% 0 ;
+    line-height: 1px;
+    border-left: 600px solid #ccc;
+    border-right: 600px solid #ccc;
+    text-align: center;
+    min-width: 100px;
+}
+
+.all_look > a{
+    color: #666;
+}
+
+#section{
+    width: 90%;
+    min-width: 1300px;
+    padding-top: 20px;
+    height: 130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section > .show{
+    height: 130px;
+    width: 17%;
+    position: relative;
+}
+
+.show > a{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+    margin-top: 12%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 15px;
+}
+
+.show > img{
+    border-radius: 15px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 12%;
+}
+
+
+/*页脚footer*/
+
+
+#footer{
+    width: 100%;
+    height: 247px;
+    min-width: 1300px;
+    background-color: #515151;
+    padding: 25px 0 0;
+    position: relative;
+}
+
+
+#footer > #footer_all{
+    width: 90%;
+    min-width: 1300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#footer > #footer_all > .footer_left{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer > #footer_all > .footer_left > a{
+    color: #bbb;
+    display: block;
+    padding-bottom: 15px;
+}
+
+#footer > #footer_all > .footer_left > a:hover{
+    color: #ededed;
+}
+
+
+#footer > #footer_all > .footer_left >.title{
+    color: #ddd;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+#footer > #footer_all > .footer_right{
+    width: 248px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #555;
+    border-width: 0 1px;
+    display: inline-block;
+    padding: 0 30px 0 30px;
+}
+
+#footer > #footer_all > .footer_right > .weixin{
+    position: relative;
+}
+
+#footer > #footer_all > .footer_right > .weixin:hover{
+    color: #ededed;
+}
+
+#footer > #footer_all > .footer_right > .weixin > .code{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    display: none;
+}
+
+#footer > .footer_bottom{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    bottom: 0;
+    right: 0;
+}
+
+#footer > .footer_bottom{
+    min-width: 1300px;
+    color: #999;
+    outline: 0;
+    line-height: 60px;
+}
+
+#footer > .footer_bottom > a{
+    color: #999;
+}

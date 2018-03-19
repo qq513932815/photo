@@ -1,0 +1,204 @@
+#main{
+	height: 950px;
+	width: 85%;
+	margin: 0 auto;
+	/*background-color: black;*/
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	min-width: 950px;
+}
+
+#big_left{
+	height: 70%;
+	width: 60%;
+	margin-top: 100px;
+	margin-left: 3%;
+	box-shadow: 0 0 15px #aaa;
+	min-width: 60%;
+}
+
+#bottons{
+	height: 8%;
+	width: 94%;
+	margin-top: 5px;
+	margin-left: 3%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#bottons > a{
+	margin-top: 17px;
+}
+
+.top_bottons{
+	line-height: 7px;
+	color: #fff;
+	background-color: #d00;
+	border-radius: 4px;
+	padding: 8px 10px;
+}
+
+#img{
+	width: 46%;
+	height: 82%;
+	margin: 0 auto;
+}
+
+#img > img{
+	height: 100%;
+	margin: 0 auto;
+}
+
+.bshare-custom{
+	margin-top: 20px;
+	margin-left: 3%;
+}
+
+/*#shares{
+	height: 5%;
+	width: 94%;
+	margin-top: 10px;
+	margin-left: 3%;
+	/*display: flex;
+}
+
+#shares a{
+	width: 20px;
+	height: 56%;
+	margin-top: 8px;
+}
+
+.Weibo{
+	background: url("../images/svg+xml.svg") 1px 0px no-repeat;
+}
+
+.Weibo:hover{
+	background: url("../images/svg+xml.svg") -39px 0px no-repeat;
+}
+
+.Qzone{
+	background: url("../images/svg+xml.svg") 1px -39px no-repeat;
+}
+
+.Qzone:hover{
+	background: url("../images/svg+xml.svg") -39px -39px no-repeat;
+}
+
+.Wechat{
+	background: url("../images/svg+xml.svg") 1px -280px no-repeat;
+}
+
+.Wechat:hover{
+	background: url("../images/svg+xml.svg") -39px -280px no-repeat;
+}
+
+.TWeibo{
+	background: url("../images/svg+xml.svg") 1px -79px no-repeat;
+}
+
+.TWeibo:hover{
+	background: url("../images/svg+xml.svg") -39px -79px no-repeat;
+}
+
+#shares p{
+	line-height: 35px;
+	color: #333;
+	padding-left: 10px;
+	margin-right: 15px;
+}*/
+
+#big_right{
+	height: 85%;
+	width: 30%;
+	box-shadow: 0 0 15px #aaa;
+	margin-top: 100px;
+	margin-right: 3%;
+	min-width: 30%;
+}
+
+#big_right > .big_right_top{
+	width: 90%;
+	height: 17%;
+	margin: 5% auto 5%;
+}
+
+#big_right > .big_right_top > img{
+	height: 100%;
+	float: left;
+}
+
+ #ID_publicTime{
+ 	float: left;
+ 	margin: 43px 30px;
+ }
+
+ #big_right_mid{
+ 	width: 90%;
+ 	height: 45%;
+ 	background-color: #eee;
+ 	margin: 0 auto 5%;
+ }
+
+ #big_right_mid > .s_box{
+ 	width: 90%;
+ 	height: 26%;
+ 	margin: 0 auto 5%;
+ 	background-color: #fff;
+ }
+
+#big_right_mid > .s_box > .info{
+	height: 45%;
+	padding-top: 3%;
+	padding-bottom: 2%;	
+	background-color: #eee;
+}
+
+ #big_right_mid > .s_box > .info > img{
+ 	float: left;
+	height: 100%;
+ }
+
+ #big_right_mid > .s_box > .info > span{
+ 	width: 40%;
+ 	float: left;
+ 	margin-left: 10px;
+	margin-top: 15px;
+ }
+
+.s_box > .text{
+    margin: 10px 25px;
+}
+
+#big_right_mid > p{
+	text-align: center;
+}
+
+ #big_right_under{
+ 	width: 90%;
+ 	height: 27%;
+ 	margin: 0 auto 5%;
+ }
+
+ #big_right_under > .textarea{
+        margin-bottom: 20px;
+ 	width: 100%;
+ 	height: 80%;
+ 	border-radius: 4px;
+ 	box-shadow: 0 0 15px #aaa inset;
+ }
+
+.textarea > .words{
+	width: 90%;
+	height: 90%;
+	margin: 2% 5%;
+	border: 0;
+	resize:none;/*去掉右下角拖拽大小*/
+	outline:0;/*去掉获取焦点后的边框*/
+}
+
+ #big_right_under > .input{
+ 	margin-left: 260px;
+        margin-top: 20px;
+ 	border: 0;
+ }

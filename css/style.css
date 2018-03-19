@@ -1,0 +1,305 @@
+/*header区域*/
+
+#header{
+    width: 100%;
+    height: 80%;
+}
+
+/*轮播图区域*/
+
+#carcouse img{
+    width: 100%;
+    min-width: 1300px;
+    min-height: 556px;
+}
+
+/*搜索框*/
+
+#search{
+
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    left: 25%;
+    top: 120px;
+    min-width: 650px;
+}
+
+#search h1{
+    text-align: center;
+}
+
+#search_input{
+    width: 558px;
+    height: 36px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,.3);
+    position: relative;
+    margin: 35px auto 10px;
+}
+
+#inputs{
+    position: absolute;
+    position: relative;
+    width: 536px;
+    top: 5px;
+    left: 10px;
+}
+
+#inputs > .txt{
+    width: 536px;
+    height: 26px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline:none;
+    color: #fff;
+}
+
+#inputs > a{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: -5px;
+    right: -13px;
+    background: url("../images/search.svg") 7px 7px no-repeat;
+}
+
+#inputs > a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#hot_search{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+#hot_search > a{
+    padding-right: 10px;
+}
+
+
+/*maincss*/
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*为您推荐*/
+
+#foryou{
+    width: 90%;
+    height: 300px;
+    margin: 30px auto;
+    min-width: 1300px; 
+    display: flex;
+}
+
+#foryou > .img_div{
+    width: 20%;
+    height: 300px;
+    position: relative;
+}
+
+#foryou > .img_div > a > .mm{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0px,325px,300px,0px);
+}
+
+
+#foryou > .img_div > a > .sanjiao_t{
+    position: absolute;
+    left: 260px;
+    top: 50px;
+    z-index: 1;
+    clip: rect(0px,14px,28px,0px);
+}
+
+#foryou > .img_div > a > .sanjiao_b{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    z-index: 1;
+    clip: rect(50px,14px,78px,0px);
+}
+
+#foryou > .img_div > .img_word_top{
+    height: 125px;
+    width: 90%;
+    background-color: rgb(250, 250, 250);
+    padding: 10px 16px;
+}
+
+#foryou > .img_div > .img_word_top:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+#foryou > .img_div > .img_word_top > span{
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#foryou > .img_div > .img_word_top > .recommend_data_top{
+    width: 100%;
+    height: 46px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+#foryou > .img_div > .img_word_bottom{
+    height: 125px;
+    width: 90%;
+    background-color: rgb(250, 250, 250);
+    margin-top: 10px;
+    padding: 10px 16px;
+}
+
+#foryou > .img_div > .img_word_bottom:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+#foryou > .img_div > .img_word_bottom > span{
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 80%;
+}
+
+#foryou > .img_div > .img_word_bottom > .recommend_data_bottom{
+    width: 100%;
+    height: 46px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    text-align: right;
+    border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+#foryou > .img_div_big{
+    width: 20%;
+    height: 300px;
+    position: relative;
+    background-color: rgb(250, 250, 250);
+}
+
+#foryou > .img_div_big:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+#foryou > .img_div_big > .recommend_data{
+    width: 89%;
+    height: 46px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    margin-top: 20px;
+    padding: 0 16px;
+}
+
+#foryou > .img_div_big > p{
+    width: 70%;
+    color: #999;
+    margin-top: 10px;
+    padding-left: 7%;
+}
+
+#foryou > .img_div_big > span{
+    display: block;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 7%;
+}
+
+
+/*加载更多*/
+.show_more {
+    width:90%;
+    height: 40px;
+    min-width: 1300px;
+    margin: 40px auto 0px;
+    border-top: 1px solid #ddd;
+
+}
+.show_more > a{
+    background: #cbcbcb;
+    margin: 0 auto;
+    width: 400px;
+    display: block;
+    text-align: center;
+    position: relative;
+    top:-20px;
+    color:#666;
+    font-size:16px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+/*以分类浏览花瓣*/
+
+#more_links{
+    width: 90%;
+    height: 20%;
+    min-width: 1300px;
+    margin: 0 auto;
+}
+
+#more_links > .more_links_top{
+    height: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ededed;
+}
+
+.more_links_top_left{
+    font-size: 16px;
+    float: left;
+}
+
+.more_links_top_right{
+    font-size: 16px;
+    float: right;
+}
+
+.more_links_top_right > a{
+    color: rgb(158, 126, 107);
+}
+
+.more_links_top_right > a:hover{
+    text-decoration: underline;
+}
+
+#more_links > .uls{
+
+    margin: 10px auto 20px;
+    display: flex;
+}
+
+#more_links >.uls > ul{
+
+    list-style: none;
+    display: inline-block;
+}
+
+#more_links >.uls > ul > li{
+    width: 300px;
+    display: block;
+    padding: 5px 0;
+}
+
+#more_links >.uls > ul > li > a{
+    font-size: 14px;
+    color: #222;
+    outline: 0;
+}
